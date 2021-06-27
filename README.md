@@ -1,16 +1,5 @@
-# Word Translator
+# World Time Zones
 
-## User Story
-````
-AS A user
-I WANT to have my words translated to a foreign language of my choice
-SO THAT I can communicate with others in their native tongue
-````
+<img width="996" alt="time_zone" src="https://user-images.githubusercontent.com/82916926/123559143-0fa82c80-d74f-11eb-9a97-e80fbdd93dcf.png">
 
-## Acceptance Criteria 
-````
-WHEN I input a word or sentence into the text area
-THEN click the “translate” button my word or sentence is translated into a foreign language of my choice
-WHEN I choose a country from a drop down menu
-THEN the webpage displays common dishes that correspond with the country selected from the drop down menu
-````
+
