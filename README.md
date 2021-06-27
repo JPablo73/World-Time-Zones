@@ -1,5 +1,5 @@
 # World Time Zones
-https://jpablo73.github.io/World-Time-Zones/
+
 
 I contributed to this group project in the design of the webpage. I wrote the HTML and CSS code. Bulma CSS framework was used for layout and styling.
 
