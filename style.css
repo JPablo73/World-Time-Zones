@@ -11,7 +11,12 @@ body {
 
 .hero {
     background-color: rgb(118, 142, 207);
-    padding-left: 25px;
+    padding: 0 25px;
+}
+
+.time {
+    text-align: right;
+    color: white;
 }
 
 .container {

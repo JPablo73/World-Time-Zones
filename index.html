@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Word Translator</title>
+    <title>Time Zones</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <link rel="stylesheet" href="style.css">
@@ -15,62 +15,50 @@
     <section class="hero">
         <div class="hero-body">
             <h1 class="title">
-                Word Translator & Time Zone
+                World Time Zone
             </h1>
             <p class="subtitle">
-                <strong>Translate any word or phrase to your language of choice</strong>
+                <strong>View local time for major cities around the world</strong>
             </p>
+            <div class="hero-foot">
+                <div class="time">Local Time: 20:30</div>
+            </div>
+
         </div>
     </section>
-    <!-- Translate card -->
+
+    <!-- time zone card -->
     <div class="container">
         <div class="columns">
             <div class="column is-two-thirds">
                 <div class="card">
                     <div class="card-content">
                         <select>
-                            <option>Select Language</option>
-                            <option>Chinese</option>
-                            <option>French</option>
-                            <option>German</option>
-                            <option>Japanese</option>
-                            <option>Korean</option>
-                            <option>Spanish</option>
+                            <option>Select City</option>
+                            <option value="/asia/tokyo" id="tokyo">Tokyo</option>
+                            <option value="/asia/dubai" id="dubai">Dubai</option>
+                            <option value="/asia/pyongyang" id="pyongyang">Pyongyang</option>
+                            <option value="/africa/cairo" id="cairo">Cairo</option>
+                            <option value="/europe/paris" id="paris">Paris</option>
+                            <option value="/america/sao_paulo" id="saopaulo">Sao Paulo</option>
+                            <option value="/america/new_york" id="newyork">New York</option>
+                            <option value="/america/los_angeles" id="losangeles"s>Los Angeles</option>
                         </select>
-                        <input class="input" type="text" placeholder="Enter Word">
+                        <form action="/nowhere" id="time_form">
+                            <input class="input" id="time_zone" type="text" placeholder="Time Zone">
+                        </form>
                     </div>
                     <div class="buttons is-right">
-                        <button class="button is-info is-outlined">Translate</button>
+                        <button class="button" id="submitBtn">Submit</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container">
-        <div class="columns">
-            <div class="column is-two-thirds">
-                <div class="card">
-                    <div class="card-content">
-                        <select>
-                            <option>Select Country</option>
-                            <option>China</option>
-                            <option>France</option>
-                            <option>Germany</option>
-                            <option>Japan</option>
-                            <option>Korea</option>
-                            <option>Spain</option>
-                        </select>
-                        <input class="input" type="text" placeholder="Time Zone">
-                    </div>
-                    <div class="buttons is-right">
-                        <button class="button is-info is-outlined">Submit</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
 </body>
 
