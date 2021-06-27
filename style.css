@@ -6,7 +6,7 @@ body {
     background-image: url("https://starkaerospace.com/wp-content/uploads/2014/06/background-world-map-1.gif");
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom;
 }
 
 .hero {
@@ -14,9 +14,14 @@ body {
     padding: 0 25px;
 }
 
+#hero-body {
+    padding: 2rem 1.5rem;
+}
+
 .time {
     text-align: right;
     color: white;
+    margin-bottom: 0;
 }
 
 .container {
@@ -33,19 +38,39 @@ body {
 
 .card {
     margin: 0 25px;
+    padding-bottom: 20px;
     box-shadow: 0 5px 8px slategray;
 }
 
 .button {
     margin-right: 25px;
+    border-color: #209cee;
+    color: #209cee;
+}
+
+.button:hover {
+    background-color: #209cee;
+    border-color: #209cee;
+    color: #fff;
 }
 
 select {
     margin-bottom: 10px;
 }
 
-@media(max-width: 560px){
+@media(max-width: 768px){
     .subtitle {
         font-size: 16px;
     }
-}
+    .time, #time_zone {
+        font-size: small;
+    }
+
+    .hero {
+        text-align: center
+    }
+    body {
+        height: 90vh;
+    }
+};
+
