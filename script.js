@@ -4,7 +4,7 @@ currTime.innerText = (new Date().toLocaleString('en-US'));
 var onThisDate = document.querySelector('#onThisDate');
 var todaysFact = document.querySelector('#todaysFact');
 var m = new Date();
-var month = m.getMonth() +1;
+var month = m.getMonth() + 1;
 var d = new Date();
 var date = d.getDate();
 
@@ -30,7 +30,7 @@ var anchorage = document.querySelector('#anchorage');
 document.addEventListener("input", handleSelect)
 function handleSelect(ev) {
 	let select = ev.target;
-	var timeZone = "http://worldtimeapi.org/api" + select.value
+	var timeZone = "https://worldtimeapi.org/api" + select.value
 	console.log(select.value)
 	fetch(timeZone)
 		.then(function (response) {
@@ -44,7 +44,7 @@ function handleSelect(ev) {
 
 // On this Date in History API generator
 var travel = "https://byabbe.se/on-this-day/" + month + "/" + date + "/events.json"
-	var eventYear = 
+var eventYear =
 	fetch(travel)
 		.then(function (response) {
 			return response.json();
@@ -56,5 +56,5 @@ var travel = "https://byabbe.se/on-this-day/" + month + "/" + date + "/events.js
 		})
 
 function randomFact() {
-  
+
 }
