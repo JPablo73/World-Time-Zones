@@ -37,21 +37,13 @@ body {
 }
 
 .card {
-    margin: 0 25px;
+    margin: 0 35px;
     padding-bottom: 20px;
     box-shadow: 0 5px 8px slategray;
 }
 
-.button {
-    margin-right: 25px;
-    border-color: #209cee;
-    color: #209cee;
-}
-
-.button:hover {
-    background-color: #209cee;
-    border-color: #209cee;
-    color: #fff;
+#onThisDate {
+    font-weight: 600;
 }
 
 select {
@@ -69,8 +61,6 @@ select {
     .hero {
         text-align: center
     }
-    body {
-        height: 90vh;
-    }
+    
 };
 
